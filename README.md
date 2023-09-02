@@ -43,3 +43,7 @@ TESTED RESOLUTIONS:
 
 
 1280x720 (all weapons work)
+
+
+
+1600x900 (all weapons work but no nemesis pattern)
