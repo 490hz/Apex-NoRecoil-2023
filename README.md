@@ -42,4 +42,4 @@ TESTED RESOLUTIONS:
 
 
 
-1280x720 (some weapon doesn't work)
+1280x720 (all weapons work)
