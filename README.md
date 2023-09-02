@@ -1,4 +1,4 @@
-# Apex-NoRecoil-2023
+# Apex-NoRecoil-2023 S18 UPDATE
 
 
 exzyyy edition
@@ -29,3 +29,17 @@ https://github.com/sayoui001/ApexAHK-Reduce-recoil (apexmaster.ahk and some patt
 https://www.unknowncheats.me/forum/apex-legends/593467-s17-ahk-accurate-recoil-script.html (some pattern)
 
 
+
+TESTED RESOLUTIONS:
+
+
+
+1920x1080 (all weapons work)
+
+
+
+1366x768 (all weapons work)
+
+
+
+1280x720 (some weapon doesn't work)
