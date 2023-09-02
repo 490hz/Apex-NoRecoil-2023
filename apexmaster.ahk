@@ -461,7 +461,7 @@ DetectAndSetWeapon()
                 current_weapon_type := PROWLER_FULLAUTO_WEAPON_TYPE
                 current_pattern := PROWLER_FULLAUTO_PATTERN
             }
-        } else if (CheckWeapon(LSTAR_PIXELS)) {
+        } if (CheckWeapon(LSTAR_PIXELS)) {
             Global RapidMode := 0
             current_weapon_type := LSTAR_WEAPON_TYPE
             current_pattern := LSTAR_PATTERN
