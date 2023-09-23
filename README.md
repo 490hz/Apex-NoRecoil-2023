@@ -16,12 +16,14 @@ https://github.com/sayoui001/ApexAHK-Reduce-recoil (apexmaster.ahk and some patt
 
 https://www.unknowncheats.me/forum/apex-legends/593467-s17-ahk-accurate-recoil-script.html (some pattern)
 
-
+## How to use
+![Step 1](https://github.com/exzyyywakeup/Apex-NoRecoil-2023/blob/main/install%20and%20delete%20this%20folder/Screenshot_1.png)
+![Step 2](https://github.com/exzyyywakeup/Apex-NoRecoil-2023/blob/main/install%20and%20delete%20this%20folder/Screenshot_2.png)
+![Step 3](https://github.com/exzyyywakeup/Apex-NoRecoil-2023/blob/main/install%20and%20delete%20this%20folder/Screenshot_1.png)
+![Step 4](https://github.com/exzyyywakeup/Apex-NoRecoil-2023/blob/main/install%20and%20delete%20this%20folder/Screenshot_3.png)
+![Step 5](https://github.com/exzyyywakeup/Apex-NoRecoil-2023/blob/main/install%20and%20delete%20this%20folder/Screenshot_5.png)
 
 ## TESTED RESOLUTIONS
-
-
-
 1920x1080 (all weapons work)
 
 1600x900 (nemesis doesnt work)
