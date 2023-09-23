@@ -19,8 +19,8 @@ https://www.unknowncheats.me/forum/apex-legends/593467-s17-ahk-accurate-recoil-s
 ## How to use
 ![Step 1](https://github.com/exzyyywakeup/Apex-NoRecoil-2023/blob/main/install%20and%20delete%20this%20folder/Screenshot_1.png)
 ![Step 2](https://github.com/exzyyywakeup/Apex-NoRecoil-2023/blob/main/install%20and%20delete%20this%20folder/Screenshot_2.png)
-![Step 3](https://github.com/exzyyywakeup/Apex-NoRecoil-2023/blob/main/install%20and%20delete%20this%20folder/Screenshot_1.png)
-![Step 4](https://github.com/exzyyywakeup/Apex-NoRecoil-2023/blob/main/install%20and%20delete%20this%20folder/Screenshot_3.png)
+![Step 3](https://github.com/exzyyywakeup/Apex-NoRecoil-2023/blob/main/install%20and%20delete%20this%20folder/Screenshot_3.png)
+![Step 4](https://github.com/exzyyywakeup/Apex-NoRecoil-2023/blob/main/install%20and%20delete%20this%20folder/Screenshot_4.png)
 ![Step 5](https://github.com/exzyyywakeup/Apex-NoRecoil-2023/blob/main/install%20and%20delete%20this%20folder/Screenshot_5.png)
 
 ## TESTED RESOLUTIONS
