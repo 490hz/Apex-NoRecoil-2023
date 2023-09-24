@@ -32,7 +32,12 @@ https://www.unknowncheats.me/forum/apex-legends/593467-s17-ahk-accurate-recoil-s
 
 1280x720 (all weapons work)
 
+## How to debug
+guide
+https://www.youtube.com/watch?v=VhpEi4_U3lc
 
+ahk_resolution_rough_generator.py
+https://github.com/mgsweet/Apex-NoRecoil-2021/blob/dbbd1a30bc90c3284321792bfa13310d524ab6c4/AHK/debug/ahk_resolution_rough_generator.py
 
 ## Credits
 Copyright (C) 2023 exzyyywakeup, under the [GPL-3.0 License](LICENSE)
