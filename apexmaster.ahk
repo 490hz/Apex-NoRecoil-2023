@@ -474,7 +474,7 @@ DetectAndSetWeapon()
         is_gold_optics_weapon := true
         if (CheckWeapon(WINGMAN_PIXELS)) {
             current_weapon_type := WINGMAN_WEAPON_TYPE
-            Global RapidMode := 1
+            Global RapidMode := 0
         } else {
             current_weapon_type := SNIPER_WEAPON_TYPE
             Global RapidMode := 0

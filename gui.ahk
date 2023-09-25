@@ -27,15 +27,10 @@ Gui, Add, GroupBox, x11 y69 w450 h180 , Settings
 Gui, Font, S13 Bold, 
 Gui, Add, Text, x137 y89 w50 h30 , sens:
 Gui, Add, Slider, x187 y89 w150 h30 vsider_sen gSlide range0-60 tickinterval1 AltSubmit, %sider_sen%
-if (auto_fire == "1") {
-    Gui, Add, CheckBox, x70 y129 w110 h30 vauto_fire Checked, auto_fire
-} else {
-    Gui, Add, CheckBox, x70 y129 w110 h30 vauto_fire, auto_fire
-}
 if (ads_only == "1") {
-    Gui, Add, CheckBox, x200 y129 w110 h30 vads_only Checked, ads_only
+    Gui, Add, CheckBox, x70 y129 w110 h30 vads_only Checked, ads_only
 } else {
-    Gui, Add, CheckBox, x200 y129 w110 h30 vads_only, ads_only
+    Gui, Add, CheckBox, x70 y129 w110 h30 vads_only, ads_only
 }
 if (debug == "1") {
     Gui, Add, CheckBox, x320 y129 w110 h30 vdebug Checked, debug
