@@ -101,11 +101,11 @@ global DEVOTION_PIXELS := LoadPixel("devotion")
 global HAVOC_PIXELS := LoadPixel("havoc")
 global VOLT_PIXELS := LoadPixel("volt")
 global NEMESIS_PIXELS := LoadPixel("nemesis")
+global LSTAR_PIXELS := LoadPixel("lstar")
 ; sniper weapon
 global WINGMAN_PIXELS := LoadPixel("wingman")
 ; supply drop weapon
 global PROWLER_PIXELS := LoadPixel("prowler")
-global LSTAR_PIXELS := LoadPixel("lstar")
 ; Turbocharger
 global HAVOC_TURBOCHARGER_PIXELS := LoadPixel("havoc_turbocharger")
 global DEVOTION_TURBOCHARGER_PIXELS := LoadPixel("devotion_turbocharger")
@@ -213,6 +213,7 @@ global HAVOC_PATTERN := LoadPattern("Havoc.txt")
 global VOLT_PATTERN := LoadPattern("Volt.txt")
 global NEMESIS_PATTERN = LoadPattern("Nemesis.txt")
 global NEMESIS_CHARGED_PATTERN = LoadPattern("NemesisCharged.txt")
+global LSTAR_PATTERN := LoadPattern("Lstar.txt")
 ; special
 global CAR_PATTERN := LoadPattern("CAR.txt")
 ; heavy weapon pattern
@@ -227,7 +228,6 @@ global WINGMAN_PATTERN := LoadPattern("Wingman.txt")
 ; supply drop weapon pattern
 global PROWLER_PATTERN := LoadPattern("Prowler.txt")
 global PROWLER_FULLAUTO_PATTERN := LoadPattern("ProwlerFullAuto.txt")
-global LSTAR_PATTERN := LoadPattern("Lstar.txt")
 ; sella
 global SELLA_PATTERN := LoadPattern("Sella.txt")
 
@@ -450,6 +450,10 @@ DetectAndSetWeapon()
                 current_weapon_type := NEMESIS_CHARGED_WEAPON_TYPE
                 current_pattern := NEMESIS_CHARGED_PATTERN
             }
+        } if (CheckWeapon(LSTAR_PIXELS)) {
+            Global RapidMode := 0
+            current_weapon_type := LSTAR_WEAPON_TYPE
+            current_pattern := LSTAR_PATTERN
         }
     } else if (check_point_color == SUPPY_DROP_COLOR) {
         if (CheckWeapon(PROWLER_PIXELS)) {
