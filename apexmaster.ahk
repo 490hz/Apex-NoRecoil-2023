@@ -91,6 +91,7 @@ global ALTERNATOR_PIXELS := LoadPixel("alternator")
 global RE45_PIXELS := LoadPixel("re45")
 ; heavy weapon
 global FLATLINE_PIXELS := LoadPixel("flatline")
+global PROWLER_PIXELS := LoadPixel("prowler")
 global HEMLOK_PIXELS := LoadPixel("hemlok")
 global RAMPAGE_PIXELS := LoadPixel("rampage")
 global P3030_PIXELS := LoadPixel("p3030")
@@ -218,6 +219,8 @@ global LSTAR_PATTERN := LoadPattern("Lstar.txt")
 global CAR_PATTERN := LoadPattern("CAR.txt")
 ; heavy weapon pattern
 global FLATLINE_PATTERN := LoadPattern("Flatline.txt")
+global PROWLER_PATTERN := LoadPattern("Prowler.txt")
+global PROWLER_FULLAUTO_PATTERN := LoadPattern("ProwlerFullAuto.txt")
 global RAMPAGE_PATTERN := LoadPattern("Rampage.txt")
 global RAMPAGEAMP_PATTERN := LoadPattern("RampageAmp.txt")
 global HEMLOK_PATTERN := LoadPattern("Hemlok.txt")
@@ -403,6 +406,15 @@ DetectAndSetWeapon()
             current_weapon_type := RAMPAGE_WEAPON_TYPE
             current_pattern := RAMPAGE_PATTERN
             Global RapidMode := 1
+        } else if (CheckWeapon(PROWLER_PIXELS)) {
+	    if (!is_single_mode) {
+            	current_weapon_type := PROWLER_WEAPON_TYPE
+            	current_pattern := PROWLER_PATTERN
+                Global RapidMode := 1
+            } else {
+                current_weapon_type := PROWLER_FULLAUTO_WEAPON_TYPE
+                current_pattern := PROWLER_FULLAUTO_PATTERN
+            }
         } else if (CheckWeapon(HEMLOK_PIXELS)) {
             current_weapon_type := HEMLOK_AUTO_WEAPON_TYPE
             current_pattern := HEMLOK_AUTO_PATTERN
