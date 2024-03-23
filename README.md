@@ -1,5 +1,7 @@
 # AHK, minimize recoil with auto weapon detection for Apex Legends
 
+### information
+## Don't ask me to update the patterns. Don't ask me to fix the weapons. As long as everything works for me and my friends, I'm not going to fix anything.
 
 ### Warning
 You can get banned for using this script.  I've been playing for about a year and have never been banned
