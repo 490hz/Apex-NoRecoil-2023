@@ -18,7 +18,11 @@ https://github.com/sayoui001/ApexAHK-Reduce-recoil (apexmaster.ahk and some patt
 
 https://www.unknowncheats.me/forum/apex-legends/593467-s17-ahk-accurate-recoil-script.html (some pattern)
 
-## How to use
+## How to use (video)
+
+https://youtu.be/agv-_5W-FsM
+
+## How to use (image)
 ![Step 1](https://github.com/exzyyywakeup/Apex-NoRecoil-2023/blob/main/install%20and%20delete%20this%20folder/Screenshot_1.png)
 ![Step 2](https://github.com/exzyyywakeup/Apex-NoRecoil-2023/blob/main/install%20and%20delete%20this%20folder/Screenshot_2.png)
 ![Step 3](https://github.com/exzyyywakeup/Apex-NoRecoil-2023/blob/main/install%20and%20delete%20this%20folder/Screenshot_3.png)
