@@ -1,8 +1,5 @@
 # AHK, minimize recoil with auto weapon detection for Apex Legends
 
-### information
-## Don't ask me to update the patterns. Don't ask me to fix the weapons. As long as everything works for me and my friends, I'm not going to fix anything.
-
 ### Warning
 You can get banned for using this script.  I've been playing for about a year and have never been banned
 
@@ -29,18 +26,9 @@ https://youtu.be/agv-_5W-FsM
 ![Step 4](https://github.com/exzyyywakeup/Apex-NoRecoil-2023/blob/main/install%20and%20delete%20this%20folder/Screenshot_4.png)
 ![Step 5](https://github.com/exzyyywakeup/Apex-NoRecoil-2023/blob/main/install%20and%20delete%20this%20folder/Screenshot_5.png)
 
-## Tested resolutions
-1920x1080 (all weapons work)
-
-1600x900 (nemesis doesnt work)
-
-1366x768 (all weapons work)
-
-1280x720 (all weapons work)
-
 ## How to debug
 guide
-https://www.youtube.com/watch?v=VhpEi4_U3lc
+https://youtu.be/VhpEi4_U3lc
 
 ahk_resolution_rough_generator.py
 https://github.com/mgsweet/Apex-NoRecoil-2021/blob/dbbd1a30bc90c3284321792bfa13310d524ab6c4/AHK/debug/ahk_resolution_rough_generator.py
