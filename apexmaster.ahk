@@ -106,7 +106,6 @@ global LSTAR_PIXELS := LoadPixel("lstar")
 ; sniper weapon
 global WINGMAN_PIXELS := LoadPixel("wingman")
 ; supply drop weapon
-global PROWLER_PIXELS := LoadPixel("prowler")
 ; Turbocharger
 global HAVOC_TURBOCHARGER_PIXELS := LoadPixel("havoc_turbocharger")
 global DEVOTION_TURBOCHARGER_PIXELS := LoadPixel("devotion_turbocharger")
@@ -229,8 +228,6 @@ global P3030_PATTERN := LoadPattern("3030.txt")
 ; sinper weapon pattern
 global WINGMAN_PATTERN := LoadPattern("Wingman.txt")
 ; supply drop weapon pattern
-global PROWLER_PATTERN := LoadPattern("Prowler.txt")
-global PROWLER_FULLAUTO_PATTERN := LoadPattern("ProwlerFullAuto.txt")
 ; sella
 global SELLA_PATTERN := LoadPattern("Sella.txt")
 
@@ -468,16 +465,7 @@ DetectAndSetWeapon()
             current_pattern := LSTAR_PATTERN
         }
     } else if (check_point_color == SUPPY_DROP_COLOR) {
-        if (CheckWeapon(PROWLER_PIXELS)) {
-	    if (!is_single_mode) {
-            	current_weapon_type := PROWLER_WEAPON_TYPE
-            	current_pattern := PROWLER_PATTERN
-                Global RapidMode := 1
-            } else {
-                current_weapon_type := PROWLER_FULLAUTO_WEAPON_TYPE
-                current_pattern := PROWLER_FULLAUTO_PATTERN
-            }
-        } if (CheckWeapon(LSTAR_PIXELS)) {
+        if (CheckWeapon(LSTAR_PIXELS)) {
             Global RapidMode := 0
             current_weapon_type := LSTAR_WEAPON_TYPE
             current_pattern := LSTAR_PATTERN
