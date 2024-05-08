@@ -98,7 +98,7 @@ Gui, Add, Link, x158 y307 w160 h18 , <a href="https://github.com/mgsweet/Apex-No
 ActiveMonitorInfo(X, Y, Width, Height)
 xPos := Width / 2 - 477 / 2
 yPos := Height / 2 - 335 / 2
-Gui, Show, x%xPos% y%yPos% h335 w477, Apex NoRecoil S20
+Gui, Show, x%xPos% y%yPos% h335 w477, Apex NoRecoil S21
 Return
 
 Slide:

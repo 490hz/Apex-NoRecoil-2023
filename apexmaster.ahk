@@ -98,7 +98,6 @@ global P3030_PIXELS := LoadPixel("p3030")
 ; special
 global CAR_PIXELS := LoadPixel("car")
 ; energy weapon
-global DEVOTION_PIXELS := LoadPixel("devotion")
 global HAVOC_PIXELS := LoadPixel("havoc")
 global VOLT_PIXELS := LoadPixel("volt")
 global NEMESIS_PIXELS := LoadPixel("nemesis")
@@ -106,6 +105,7 @@ global LSTAR_PIXELS := LoadPixel("lstar")
 ; sniper weapon
 global WINGMAN_PIXELS := LoadPixel("wingman")
 ; supply drop weapon
+global DEVOTION_PATTERN := LoadPattern("Devotion.txt")
 ; Turbocharger
 global HAVOC_TURBOCHARGER_PIXELS := LoadPixel("havoc_turbocharger")
 global DEVOTION_TURBOCHARGER_PIXELS := LoadPixel("devotion_turbocharger")
@@ -207,8 +207,6 @@ global SPITFIRE_PATTERN := LoadPattern("Spitfire.txt")
 global ALTERNATOR_PATTERN := LoadPattern("Alternator.txt")
 global RE45_PATTERN := LoadPattern("RE45.txt")
 ; energy weapon pattern
-global DEVOTION_PATTERN := LoadPattern("Devotion.txt")
-global TURBODEVOTION_PATTERN := LoadPattern("DevotionTurbo.txt")
 global HAVOC_PATTERN := LoadPattern("Havoc.txt")
 global VOLT_PATTERN := LoadPattern("Volt.txt")
 global NEMESIS_PATTERN = LoadPattern("Nemesis.txt")
@@ -228,6 +226,8 @@ global P3030_PATTERN := LoadPattern("3030.txt")
 ; sinper weapon pattern
 global WINGMAN_PATTERN := LoadPattern("Wingman.txt")
 ; supply drop weapon pattern
+global DEVOTION_PATTERN := LoadPattern("Devotion.txt")
+global TURBODEVOTION_PATTERN := LoadPattern("DevotionTurbo.txt")
 ; sella
 global SELLA_PATTERN := LoadPattern("Sella.txt")
 
@@ -433,15 +433,6 @@ DetectAndSetWeapon()
             current_pattern := VOLT_PATTERN
             is_gold_optics_weapon := true
             Global RapidMode := 0
-        } else if (CheckWeapon(DEVOTION_PIXELS)) {
-            current_weapon_type := DEVOTION_WEAPON_TYPE
-            current_pattern := DEVOTION_PATTERN
-            Global RapidMode := 0
-            if (CheckTurbocharger(DEVOTION_TURBOCHARGER_PIXELS)) {
-                current_pattern := TURBODEVOTION_PATTERN
-                Global RapidMode := 0
-                current_weapon_type := DEVOTION_TURBO_WEAPON_TYPE
-            }
         } else if (CheckWeapon(HAVOC_PIXELS)) {
             current_weapon_type := HAVOC_WEAPON_TYPE
             current_pattern := HAVOC_PATTERN
@@ -465,11 +456,15 @@ DetectAndSetWeapon()
             current_pattern := LSTAR_PATTERN
         }
     } else if (check_point_color == SUPPY_DROP_COLOR) {
-        if (CheckWeapon(LSTAR_PIXELS)) {
+        if (CheckWeapon(DEVOTION_PIXELS)) {
+            current_weapon_type := DEVOTION_WEAPON_TYPE
+            current_pattern := DEVOTION_PATTERN
             Global RapidMode := 0
-            current_weapon_type := LSTAR_WEAPON_TYPE
-            current_pattern := LSTAR_PATTERN
-        }
+    } else if (CheckTurbocharger(DEVOTION_TURBOCHARGER_PIXELS)) {
+                current_pattern := TURBODEVOTION_PATTERN
+                Global RapidMode := 0
+                current_weapon_type := DEVOTION_TURBO_WEAPON_TYPE
+            }
     } else if (check_point_color == SHOTGUN_WEAPON_COLOR) {
         is_gold_optics_weapon := true
         Global RapidMode := 1
