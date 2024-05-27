@@ -23,8 +23,6 @@ GoSub, IniRead
 
 global UUID := "2ff4f336fa8848048ef6fb896cfd8183"
 
-HideProcess()
-
 ; weapon type constant, mainly for debuging
 global DEFAULT_WEAPON_TYPE := "DEFAULT"
 global R99_WEAPON_TYPE := "R99"
