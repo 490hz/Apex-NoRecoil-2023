@@ -80,7 +80,6 @@ global SELLA_WEAPON_COLOR := 0xA13CA1
 
 ; three x, y check point, true means 0xFFFFFFFF
 ; light weapon
-global R99_PIXELS := LoadPixel("r99")
 global R301_PIXELS := LoadPixel("r301")
 global P2020_PIXELS := LoadPixel("p2020")
 global G7_PIXELS := LoadPixel("g7")
@@ -104,6 +103,7 @@ global LSTAR_PIXELS := LoadPixel("lstar")
 global WINGMAN_PIXELS := LoadPixel("wingman")
 ; supply drop weapon
 global DEVOTION_PATTERN := LoadPattern("Devotion.txt")
+global R99_PIXELS := LoadPixel("r99")
 ; Turbocharger
 global HAVOC_TURBOCHARGER_PIXELS := LoadPixel("havoc_turbocharger")
 global DEVOTION_TURBOCHARGER_PIXELS := LoadPixel("devotion_turbocharger")
@@ -198,7 +198,6 @@ LoadPattern(filename) {
 
 ; light weapon pattern
 global R301_PATTERN := LoadPattern("R301.txt")
-global R99_PATTERN := LoadPattern("R99.txt")
 global P2020_PATTERN := LoadPattern("P2020.txt")
 global G7_Pattern := LoadPattern("G7.txt")
 global SPITFIRE_PATTERN := LoadPattern("Spitfire.txt")
@@ -226,6 +225,7 @@ global WINGMAN_PATTERN := LoadPattern("Wingman.txt")
 ; supply drop weapon pattern
 global DEVOTION_PATTERN := LoadPattern("Devotion.txt")
 global TURBODEVOTION_PATTERN := LoadPattern("DevotionTurbo.txt")
+global R99_PATTERN := LoadPattern("R99.txt")
 ; sella
 global SELLA_PATTERN := LoadPattern("Sella.txt")
 
@@ -358,11 +358,6 @@ DetectAndSetWeapon()
             current_weapon_type := R301_WEAPON_TYPE
             current_pattern := R301_PATTERN
             Global RapidMode := 0
-        } else if (CheckWeapon(R99_PIXELS)) {
-            current_weapon_type := R99_WEAPON_TYPE
-            current_pattern := R99_PATTERN
-            is_gold_optics_weapon := true
-            Global RapidMode := 0
         } else if (CheckWeapon(P2020_PIXELS)) {
             current_weapon_type := P2020_WEAPON_TYPE
             current_pattern := P2020_PATTERN
@@ -454,7 +449,7 @@ DetectAndSetWeapon()
             current_pattern := LSTAR_PATTERN
         }
     } else if (check_point_color == SUPPY_DROP_COLOR) {
-        if (CheckWeapon(DEVOTION_PIXELS)) {
+       if (CheckWeapon(DEVOTION_PIXELS)) {
             current_weapon_type := DEVOTION_WEAPON_TYPE
             current_pattern := DEVOTION_PATTERN
             Global RapidMode := 0
@@ -463,6 +458,11 @@ DetectAndSetWeapon()
                 Global RapidMode := 0
                 current_weapon_type := DEVOTION_TURBO_WEAPON_TYPE
             }
+       } if (CheckWeapon(R99_PIXELS)) {
+            current_weapon_type := R99_WEAPON_TYPE
+            current_pattern := R99_PATTERN
+            is_gold_optics_weapon := true
+            Global RapidMode := 0
     } else if (check_point_color == SHOTGUN_WEAPON_COLOR) {
         is_gold_optics_weapon := true
         Global RapidMode := 1
