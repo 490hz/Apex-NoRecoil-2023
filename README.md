@@ -1,4 +1,4 @@
-# AHK, minimize recoil with auto weapon detection for Apex Legends
+# DETECTED DETECTED DETECTED DONT USE IT
 
 ### Warning
 You can get banned for using this script.  I've been playing for about a year and have never been banned
