@@ -1,4 +1,4 @@
-# Its working again, but for how long?
+# DETECTED DETECTED DETECTED DONT USE IT
 
 ### Warning
 You can get banned for using this script.  I've been playing for about a year and have never been banned
